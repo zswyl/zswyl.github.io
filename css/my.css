@@ -1,0 +1,109 @@
+/* Here is your custom css styles. */
+
+/* hexo-filter-github-emojis */
+.github-emoji{
+    height: 2em;
+    width: 2em;
+    display: inline-block !important;
+    position: relative;
+    margin: 0 3px !important;
+    padding: 0;
+}
+.github-emoji:hover{
+    animation: emoji-face 5s infinite ease-in-out;
+}
+@keyframes emoji-face {
+    2% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    4% {
+        transform: translate(0, -1.5px) rotate(-0.5deg);
+    }
+    6% {
+        transform: translate(0, 1.5px) rotate(-1.5deg);
+    }
+    8% {
+        transform: translate(0, -1.5px) rotate(-1.5deg);
+    }
+    10% {
+        transform: translate(0, 2.5px) rotate(1.5deg);
+    }
+    12% {
+        transform: translate(0, -0.5px) rotate(1.5deg);
+    }
+    14% {
+        transform: translate(0, -1.5px) rotate(1.5deg);
+    }
+    16% {
+        transform: translate(0, -0.5px) rotate(-1.5deg);
+    }
+    18% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    20% {
+        transform: translate(0, -1.5px) rotate(2.5deg);
+    }
+    22% {
+        transform: translate(0, 0.5px) rotate(-1.5deg);
+    }
+    24% {
+        transform: translate(0, 1.5px) rotate(1.5deg);
+    }
+    26% {
+        transform: translate(0, 0.5px) rotate(0.5deg);
+    }
+    28% {
+        transform: translate(0, 0.5px) rotate(1.5deg);
+    }
+}
+
+
+/*置顶*/
+article:not(:first-of-type) .post-block .set-top div{display:none;}
+article:last-of-type .post-block .set-top div{display:none;}
+article:first-of-type .post-block .set-top {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+article:first-of-type .post-block .set-top div{
+    line-height: 18px;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    position: relative;
+    padding: 3px 0;
+    top: 12px;
+    width: 113px;
+    background-color: #0bf;
+    color: #fff;
+    box-shadow: -3px 5px 6px -5px rgba(0,0,0,.5);
+    background: -webkit-linear-gradient(left , rgba(48,182,209,0.99),rgba(43,70,191,0.99) 100%);
+}
+article:first-of-type .set-top>div:before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 100%;
+    z-index: -1;
+    border-left: 4px solid #31a4ce;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid #31a4ce;
+}
+article:first-of-type .set-top>div:after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: 100%;
+    z-index: -1;
+    border-left: 4px solid transparent;
+    border-right: 4px solid #2f5ec3;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid #2f5ec3;
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>街角的守望</title>
+  
+  <subtitle>街角的守望</subtitle>
+  <link href="https://zswyl.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zswyl.github.io/"/>
+  <updated>2021-05-08T06:50:29.108Z</updated>
+  <id>https://zswyl.github.io/</id>
+  
+  <author>
+    <name>朱松望</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>day-02-数据类型转换、运算符、方法入门</title>
+    <link href="https://zswyl.github.io/post/16c2569a/"/>
+    <id>https://zswyl.github.io/post/16c2569a/</id>
+    <published>2021-05-08T06:24:00.000Z</published>
+    <updated>2021-05-08T06:50:29.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java基础" scheme="https://zswyl.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 博客添加pdf 插件</title>
+    <link href="https://zswyl.github.io/post/a24fd5d2/"/>
+    <id>https://zswyl.github.io/post/a24fd5d2/</id>
+    <published>2021-05-08T04:59:00.000Z</published>
+    <updated>2021-05-08T06:26:38.986Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zswyl.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zswyl.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一、Mybatie框架</title>
+    <link href="https://zswyl.github.io/post/455c316f/"/>
+    <id>https://zswyl.github.io/post/455c316f/</id>
+    <published>2021-05-08T04:42:00.000Z</published>
+    <updated>2021-05-08T04:45:43.697Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Mybatis" scheme="https://zswyl.github.io/categories/Mybatis/"/>
+    
+    
+    <category term="Mybatis" scheme="https://zswyl.github.io/tags/Mybatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day-01-前言、入门程序、常量、变量</title>
+    <link href="https://zswyl.github.io/post/490ca535/"/>
+    <id>https://zswyl.github.io/post/490ca535/</id>
+    <published>2021-05-08T04:13:00.000Z</published>
+    <updated>2021-05-08T06:26:21.144Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java基础" scheme="https://zswyl.github.io/categories/Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda 配置国内下载镜像</title>
+    <link href="https://zswyl.github.io/post/1b524221/"/>
+    <id>https://zswyl.github.io/post/1b524221/</id>
+    <published>2021-05-08T03:39:00.000Z</published>
+    <updated>2021-05-08T06:27:00.402Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://zswyl.github.io/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://zswyl.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>获取Class对象的三种方式</title>
+    <link href="https://zswyl.github.io/post/da2b7869/"/>
+    <id>https://zswyl.github.io/post/da2b7869/</id>
+    <published>2021-05-06T14:08:00.000Z</published>
+    <updated>2021-05-08T06:30:38.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>反射机制</title>
+    <link href="https://zswyl.github.io/post/fan-she-ji-zhi/"/>
+    <id>https://zswyl.github.io/post/fan-she-ji-zhi/</id>
+    <published>2021-05-06T12:53:00.000Z</published>
+    <updated>2021-05-08T06:27:29.914Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+    <category term="反射机制" scheme="https://zswyl.github.io/tags/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring中的常用注解</title>
+    <link href="https://zswyl.github.io/post/spring-zhong-de-chang-yong-zhu-jie/"/>
+    <id>https://zswyl.github.io/post/spring-zhong-de-chang-yong-zhu-jie/</id>
+    <published>2021-05-06T11:51:00.000Z</published>
+    <updated>2021-05-08T06:27:56.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring" scheme="https://zswyl.github.io/categories/Spring/"/>
+    
+    
+    <category term="Spring" scheme="https://zswyl.github.io/tags/Spring/"/>
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 添加admin后台</title>
+    <link href="https://zswyl.github.io/post/23abcb74/"/>
+    <id>https://zswyl.github.io/post/23abcb74/</id>
+    <published>2021-05-06T08:44:00.000Z</published>
+    <updated>2021-05-08T06:28:11.271Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zswyl.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zswyl.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
