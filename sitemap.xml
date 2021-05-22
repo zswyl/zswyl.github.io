@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zswyl.github.io/post/5729df21/</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zswyl.github.io/post/701edcc3/</loc>
+    
+    <lastmod>2021-05-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zswyl.github.io/post/198494b9/</loc>
     
     <lastmod>2021-05-22</lastmod>
@@ -186,6 +200,13 @@
 
   
   <url>
+    <loc>https://zswyl.github.io/tags/Python/</loc>
+    <lastmod>2021-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zswyl.github.io/tags/Java/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
@@ -214,7 +235,7 @@
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/tags/Python/</loc>
+    <loc>https://zswyl.github.io/tags/JVM/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -249,6 +270,13 @@
   </url>
   
   <url>
+    <loc>https://zswyl.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2021-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zswyl.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
@@ -272,6 +300,13 @@
 
   
   <url>
+    <loc>https://zswyl.github.io/categories/Python/</loc>
+    <lastmod>2021-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zswyl.github.io/categories/%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
@@ -279,7 +314,7 @@
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/categories/Python/</loc>
+    <loc>https://zswyl.github.io/categories/JVM/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -322,6 +357,13 @@
   
   <url>
     <loc>https://zswyl.github.io/categories/Java/</loc>
+    <lastmod>2021-05-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zswyl.github.io/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2021-05-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

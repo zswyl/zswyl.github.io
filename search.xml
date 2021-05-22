@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>多线程</title>
+      <link href="post/5729df21/"/>
+      <url>post/5729df21/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="线程简介"><a href="#线程简介" class="headerlink" title="线程简介"></a>线程简介</h1><ul><li><p>多任务</p><p><img src="%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E4%BB%BB%E5%8A%A1.png" alt="多任务"></p></li></ul><p>同时做多件事情，看起来时多个任务都在做，其实本质上我们的大脑在同一时间依旧值做了一件事情</p><ul><li><p>多线程</p><p><img src="%E5%A4%9A%E7%BA%BF%E7%A8%8B/%E5%A4%9A%E7%BA%BF%E7%A8%8B.png" alt="多线程"></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> 多线程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>企业信息化战略与实施</title>
       <link href="post/198494b9/"/>
       <url>post/198494b9/</url>
@@ -131,6 +160,33 @@
         <tags>
             
             <tag> Spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JVM快速入门篇</title>
+      <link href="post/701edcc3/"/>
+      <url>post/701edcc3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> JVM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JVM </tag>
             
         </tags>
       
