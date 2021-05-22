@@ -6,7 +6,7 @@
   <link href="https://zswyl.github.io/atom.xml" rel="self"/>
   
   <link href="https://zswyl.github.io/"/>
-  <updated>2021-05-22T07:22:30.496Z</updated>
+  <updated>2021-05-22T07:31:20.312Z</updated>
   <id>https://zswyl.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CRM</title>
+    <link href="https://zswyl.github.io/post/d7de870/"/>
+    <id>https://zswyl.github.io/post/d7de870/</id>
+    <published>2021-05-22T07:29:00.000Z</published>
+    <updated>2021-05-22T07:31:20.312Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="项目" scheme="https://zswyl.github.io/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+    <category term="SpringBoot" scheme="https://zswyl.github.io/tags/SpringBoot/"/>
+    
+    <category term="SpringMVC" scheme="https://zswyl.github.io/tags/SpringMVC/"/>
+    
+    <category term="MyBatis" scheme="https://zswyl.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试题</title>
+    <link href="https://zswyl.github.io/post/5205ee75/"/>
+    <id>https://zswyl.github.io/post/5205ee75/</id>
+    <published>2021-05-22T07:26:00.000Z</published>
+    <updated>2021-05-22T07:27:34.048Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/categories/Java/"/>
+    
+    <category term="面试题" scheme="https://zswyl.github.io/categories/Java/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+    <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+    <category term="面试题" scheme="https://zswyl.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Java IO</title>
@@ -262,9 +322,9 @@
     <category term="Spring" scheme="https://zswyl.github.io/categories/Spring/"/>
     
     
-    <category term="Spring" scheme="https://zswyl.github.io/tags/Spring/"/>
-    
     <category term="Java" scheme="https://zswyl.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://zswyl.github.io/tags/Spring/"/>
     
   </entry>
   

@@ -4,6 +4,66 @@
   
     
     <entry>
+      <title>CRM</title>
+      <link href="post/d7de870/"/>
+      <url>post/d7de870/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="用户模块"><a href="#用户模块" class="headerlink" title="用户模块"></a>用户模块</h1><h2 id="一、用户登录"><a href="#一、用户登录" class="headerlink" title="一、用户登录"></a>一、用户登录</h2><ul><li><p>后端实现</p><ul><li><p>整体思路：</p><ol><li><p>参数判断</p><blockquote><p>用户姓名 非空判断<br>用户密码 非空判断</p></blockquote></li><li><p>通过用户名查询用户记录，返回用户对象</p></li><li><p>判断用户对象是否为空</p></li><li><p>如果用户对象不为空，则将前台传递的用户密码为数据库中的密码作比较</p></li><li><p>判断密码是否正确</p></li><li><p>如果密码正确，则登录成功，返回结果</p></li></ol></li><li><p>解耦</p><ul><li><p>Controller层 （控制层：接受请求、响应结果）</p><pre><code>         1. 通过形参接收客户端传递的参数                    2. 调用业务逻辑层的登录方法，得到登录的结果                               3. 响应数据给客户端</code></pre></li><li><p>Service层（业务逻辑层：非空判断、条件判断等业务逻辑处理）</p><pre><code>1. 参数判断，判断用户姓名、用户密码非空等，如果参数为空，抛出异常（异常被控制层捕获并处理）2. 调用数据访问层，通过用户名查询用户记录，返回用户对象3. 判断用户对象象是否为空，如果对象为空，抛出异常（异常被控制层捕获并处理）4. 判断密码是否正确，比较客户端传递的用户密码与数据库中查询的用户对象中的用户密码，如果密码不相等，抛出异常（异常被控制层捕获并处理）5. 如果密码正确，登录成功</code></pre></li><li><p>Dao层 （数据访问层：数据库中增删改查操作）</p><blockquote><p>通过用户名查询用户记录，返回用户对象</p></blockquote></li></ul></li></ul></li></ul><h2 id="二、修改密码"><a href="#二、修改密码" class="headerlink" title="二、修改密码"></a>二、修改密码</h2><ul><li><p>后端实现</p><ul><li><p>Controller层</p><ol><li>通过形参接收前端传递的参数 （原始密码、新密码、确认密码）</li><li>通过request对象，获取设置在cookie中的用户ID</li><li>调用Service层修改密码的功能，得到ResultInfo对象</li><li>返回ResultInfo对象</li></ol></li><li><p>Service层</p><ol><li><p>接收四个参数 （用户ID、原始密码、新密码、确认密码</p></li><li><p>通过用户ID查询用户记录，返回用户对象</p></li><li><p>参数校验</p><blockquote><p>待更新用户记录是否存在 （用户对象是否为空）<br>判断原始密码是否为空<br>判断原始密码是否正确（查询的用户对象中的用户密码是否原始密码一致）<br>判断新密码是否为空<br>判断确认密码是否为空<br>判断确认密码是否与新密码一致</p></blockquote></li><li><p>设置用户的新密码</p><blockquote><p>需要将新密码通过指定算法进行加密（md5加密）</p></blockquote></li><li><p>执行更新操作，判断受影响的行数</p></li></ol></li><li><p>Dao层</p><blockquote><p>通过用户ID修改用户密码</p></blockquote><p>难点： 单独处理 try catch 导致重复代码太多，就想要解决这个问题，所以采用了全局异常统一处理的方式，使用了接口HandlerExceptionResolver类</p><p> 然后发现方法的返回值：只有视图和数据（而数据上基本上都有@ResponseBody注解）</p><p>故可以采用反射来判断是否有该注解</p></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> SpringBoot </tag>
+            
+            <tag> SpringMVC </tag>
+            
+            <tag> MyBatis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>面试题</title>
+      <link href="post/5205ee75/"/>
+      <url>post/5205ee75/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h1><h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><blockquote><p>什么是面向对象？</p></blockquote><blockquote><blockquote><p>对比面向过程，是两种不同的处理问题的角度</p><p>面向过程更注重事情的每一个步骤及顺序，面向对象更注重事情有哪些参与者（对象）、及各自需要做什么 ,比如：洗衣机洗衣服</p></blockquote></blockquote><blockquote><blockquote><p>面向过程会将任务拆解成一系列的步骤（函数）， 1 、打开洗衣机—–&gt;2、放衣服—–&gt;3、放洗衣粉—-&gt;4、清洗—–&gt;5、烘干</p></blockquote></blockquote><blockquote><blockquote><p>面向对象会拆出人和洗衣机两个对象：</p></blockquote></blockquote><blockquote><blockquote><blockquote><p>人：打开洗衣机 放衣服 放洗衣粉</p><p>洗衣机：清洗 烘干</p></blockquote></blockquote></blockquote><p> 从以上例子能看出，面向过程比较直接高效，而面向对象更易于复用、扩展和维护</p><p> 面向对象</p><p> <strong>封装 ：</strong>封装的意义，在于明确标识出允许外部使用的所有成员函数和数据项</p><p> 内部细节对外部调用透明，外部调用无需修改或者关心内部实现</p><p>1 、<code>javabean</code>的属性私有，提供getset对外访问，因为属性的赋值或者获取逻辑只能由<code>javabean</code>本身决<br>定。而不能由外部胡乱修改</p><pre class=" language-java"><code class="language-java"><span class="token keyword">private</span> String name<span class="token punctuation">;</span>    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"tuling_"</span><span class="token operator">+</span>name<span class="token punctuation">;</span><span class="token punctuation">}</span>该name有自己的命名规则，明显不能由外部直接赋值</code></pre><p>2 、<code>orm</code>框架</p><p>操作数据库，我们不需要关心链接是如何建立的、<code>sql</code>是如何执行的，只需要引入<code>mybatis</code>，调方法即可</p><p> <strong>继承 ：</strong>继承基类的方法，并做出自己的改变和/或扩展</p><p> 子类共性的方法或者属性直接使用父类的，而不需要自己再定义，只需扩展自己个性化的</p><p><strong>多态 ：</strong>基于对象所属类的不同，外部对同一个方法的调用，实际执行的逻辑不同。</p><p>继承，方法重写，父类引用指向子类对象</p><pre><code> 父类类型    变量名 = new 子类对象; 变量名.方法名();</code></pre><p> 无法调用子类特有的功能</p><h2 id="JDK-、JRE-和JVM"><a href="#JDK-、JRE-和JVM" class="headerlink" title="JDK 、JRE 和JVM"></a>JDK 、JRE 和JVM</h2><p> JDK：</p><p>​        Java Develpment Kit java 开发工具</p><p>JRE：</p><p>​        Java Runtime Environment java运行时环境</p><p>JVM：</p><p>​        java Virtual Machine java 虚拟机</p><p><img src="JJJ.png"></p><h2 id="和equals比较"><a href="#和equals比较" class="headerlink" title="==和equals比较"></a>==和equals比较</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> 面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java IO</title>
       <link href="post/b4224212/"/>
       <url>post/b4224212/</url>
@@ -241,9 +301,9 @@
       
         <tags>
             
-            <tag> Spring </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Spring </tag>
             
         </tags>
       
