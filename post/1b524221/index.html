@@ -82,8 +82,8 @@ conda config –add channels https://mirrors.aliyun.com/py">
 <meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="街角的守望" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
     <body>
 
         <header class="navbar-fixed">
@@ -807,6 +807,8 @@ conda config –add channels https://mirrors.aliyun.com/py">
             </div>
         </div>
         <hr class="clearfix">
+            
+
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="Anaconda-配置国内下载镜像"><a href="#Anaconda-配置国内下载镜像" class="headerlink" title="Anaconda 配置国内下载镜像"></a>Anaconda 配置国内下载镜像</h2><ul>
@@ -1030,12 +1032,12 @@ conda config –add channels https://mirrors.aliyun.com/py">
                     </span>
                     <a href="https://zswyl.github.io" class="b-link-green">街角的守望</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/post/1b524221/" class="b-link-green">Anaconda 配置国内下载镜像</a>
                 </p>
             </div>
 
         </div>
     </div>
+
 
     
 
@@ -1475,7 +1477,8 @@ Object ——&gt; getClass() 通过对象.getclass
 
         // we need a <pre> tag workaround.
         // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+        // 由于if判断的条件是错误的才导致复制内容不会换行。解决办法就是将其判断条件值改为CODE即可
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
             newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
         }
 
@@ -1490,6 +1493,9 @@ Object ——&gt; getClass() 通过对象.getclass
         window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
     });
 </script>
+
+
+
 
 
     </div>
@@ -1590,6 +1596,18 @@ Object ——&gt; getClass() 通过对象.getclass
 </main>
 
 
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
         <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
@@ -1616,7 +1634,7 @@ Object ——&gt; getClass() 通过对象.getclass
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">21.6k</span> 字
+                <span class="white-color">23.4k</span> 字
             
 
             
@@ -1814,7 +1832,7 @@ $(function () {
             </script>
         
 
-    <script>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"left","width":150,"height":200},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
