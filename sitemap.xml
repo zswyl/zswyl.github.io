@@ -207,14 +207,14 @@
 
   
   <url>
-    <loc>https://zswyl.github.io/tags/Java/</loc>
+    <loc>https://zswyl.github.io/tags/Python/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/tags/JVM/</loc>
+    <loc>https://zswyl.github.io/tags/Java/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -242,6 +242,13 @@
   </url>
   
   <url>
+    <loc>https://zswyl.github.io/tags/JVM/</loc>
+    <lastmod>2021-05-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zswyl.github.io/tags/Spring/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
@@ -250,13 +257,6 @@
   
   <url>
     <loc>https://zswyl.github.io/tags/Hexo/</loc>
-    <lastmod>2021-05-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zswyl.github.io/tags/Python/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,14 +291,14 @@
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <loc>https://zswyl.github.io/tags/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/tags/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/</loc>
+    <loc>https://zswyl.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -307,7 +307,7 @@
 
   
   <url>
-    <loc>https://zswyl.github.io/categories/JVM/</loc>
+    <loc>https://zswyl.github.io/categories/Python/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -321,7 +321,7 @@
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/categories/Java%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://zswyl.github.io/categories/JVM/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -335,14 +335,14 @@
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/categories/Hexo/</loc>
+    <loc>https://zswyl.github.io/categories/Java%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zswyl.github.io/categories/Python/</loc>
+    <loc>https://zswyl.github.io/categories/Hexo/</loc>
     <lastmod>2021-05-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
