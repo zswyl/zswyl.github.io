@@ -74,11 +74,11 @@
         </script>
     
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="街角的守望" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
+<link rel="alternate" href="/atom.xml" title="街角的守望" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
     <body>
 
         <header class="navbar-fixed">
@@ -788,14 +788,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        4.5k
+                        4k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        20 分
+                        17 分
                     </div>
                     
                 
@@ -840,25 +840,25 @@
 <li>重写<code>run()</code>方法，编写线程执行体</li>
 <li>创建线程对象，调用<code>start()</code>方法启动线程</li>
 </ul>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread1</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread1</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span><span class="token punctuation">{</span>
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// run方法线程体</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">200</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">200</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"正在执行线程----"</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// main主线程</span>
         <span class="token comment" spellcheck="true">// 创建一个线程对象</span>
         TestThread1 testThread1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TestThread1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">//调用start（）方法开启线程</span>
         testThread1<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">2000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">2000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"正在执行主方法******"</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>小贴士：</p>
@@ -873,75 +873,75 @@
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>net<span class="token punctuation">.</span>URL<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;练习Thread，实现多线程同步下载图片&lt;/p&gt;
+ * &lt;p>练习Thread，实现多线程同步下载图片&lt;/p>
  *
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread2</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread2</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span><span class="token punctuation">{</span>
     <span class="token keyword">private</span> String url<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 网络图片地址</span>
     <span class="token keyword">private</span> String name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 保存的文件名</span>
 
-    <span class="token keyword">public</span> <span class="token function">TestThread2</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span> String name<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">TestThread2</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span> String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>url <span class="token operator">=</span> url<span class="token punctuation">;</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         WebDownloader webDownloader<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">WebDownloader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         webDownloader<span class="token punctuation">.</span><span class="token function">downloader</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"下载了文件名为："</span><span class="token operator">+</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         TestThread2 t1<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestThread2</span><span class="token punctuation">(</span><span class="token string">"http://img.netbian.com/file/2021/0502/17d449ebe5f05a7d0e026773b1601ef7.jpg"</span><span class="token punctuation">,</span><span class="token string">"1.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         TestThread2 t2<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestThread2</span><span class="token punctuation">(</span><span class="token string">"https://www.4kbizhi.com/d/file/2021/04/28/small123244uA7An1619584364.jpg"</span><span class="token punctuation">,</span><span class="token string">"2.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         TestThread2 t3<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestThread2</span><span class="token punctuation">(</span><span class="token string">"https://www.4kbizhi.com/d/file/2020/09/21/small174423ZTNBA1600681463.jpg"</span><span class="token punctuation">,</span><span class="token string">"3.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         t1<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         t2<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         t3<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 下载器</span>
-<span class="token keyword">class</span> <span class="token class-name">WebDownloader</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">WebDownloader</span><span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 下载方法</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">downloader</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span>String name<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">downloader</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
             FileUtils<span class="token punctuation">.</span><span class="token function">copyURLToFile</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>IOException e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>IOException e<span class="token punctuation">)</span><span class="token punctuation">{</span>
             e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"IO异常，downloader方法出现问题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="4、Runnable"><a href="#4、Runnable" class="headerlink" title="4、Runnable"></a>4、Runnable</h1><ul>
 <li>定义MyRunnable类实现<code>Runnable</code>接口</li>
 <li>实现<code>run()</code>方法，编写线程执行体</li>
 <li>创建线程对象，调用<code>start()</code>方法启动线程</li>
 </ul>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread3</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread3</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// run方法线程体</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">200</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">200</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"正在执行线程----"</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// main主线程</span>
         <span class="token comment" spellcheck="true">// 创建Runnable接口的实现类对象</span>
         TestThread3 testThread3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TestThread3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">//  创建线程对象，通过线程对象来开启我们的线程，代理</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>testThread3<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">2000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">2000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"正在执行主方法******"</span> <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="5、Runnable-与-Thread-比较"><a href="#5、Runnable-与-Thread-比较" class="headerlink" title="5、Runnable 与 Thread 比较"></a>5、Runnable 与 Thread 比较</h1><table>
 <thead>
@@ -966,40 +966,40 @@
 <h1 id="6、案例"><a href="#6、案例" class="headerlink" title="6、案例"></a>6、案例</h1><h2 id="6-1-案例1-购买火车票"><a href="#6-1-案例1-购买火车票" class="headerlink" title="6.1 案例1-购买火车票"></a>6.1 案例1-购买火车票</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>jiangqi<span class="token punctuation">.</span>demo<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;
+ * &lt;p>
  *     多个线程同时操作同一个对象
  *     买火车票的例子
- * &lt;/p&gt;
+ * &lt;/p>
  *
  */</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread4</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestThread4</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
 
     <span class="token comment" spellcheck="true">// 票数</span>
     <span class="token keyword">private</span> <span class="token keyword">int</span> ticketNums<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>ticketNums <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>ticketNums <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
             <span class="token comment" spellcheck="true">// 模拟延时</span>
-            <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
                 Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
             <span class="token comment" spellcheck="true">// Thread.currentThread()获得线程本身</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" --&gt; 拿到了第"</span> <span class="token operator">+</span> ticketNums<span class="token operator">--</span> <span class="token operator">+</span> <span class="token string">"票"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" --> 拿到了第"</span> <span class="token operator">+</span> ticketNums<span class="token operator">--</span> <span class="token operator">+</span> <span class="token string">"票"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         TestThread4 ts <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TestThread4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>ts<span class="token punctuation">,</span> <span class="token string">"stu"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>ts<span class="token punctuation">,</span> <span class="token string">"teacher"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>ts<span class="token punctuation">,</span> <span class="token string">"gangster"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>总结：</p>
@@ -1016,57 +1016,57 @@
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>jiangqi<span class="token punctuation">.</span>demo<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;模拟龟兔赛跑&lt;/p&gt;
+ * &lt;p>模拟龟兔赛跑&lt;/p>
  *
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Race</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Race</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 胜利者</span>
     <span class="token keyword">private</span> <span class="token keyword">static</span> String winner<span class="token punctuation">;</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token comment" spellcheck="true">// 模拟兔子休息</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">"兔子"</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> i <span class="token operator">%</span> <span class="token number">10</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">"兔子"</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> i <span class="token operator">%</span> <span class="token number">10</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span> <span class="token punctuation">{</span>
                     Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
                     e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
             <span class="token comment" spellcheck="true">// 判断比赛是否结束</span>
             <span class="token keyword">boolean</span> flag <span class="token operator">=</span> <span class="token function">gameOver</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">// 如果比赛结束 停止程序</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"--&gt;跑了"</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"步"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"-->跑了"</span> <span class="token operator">+</span> i <span class="token operator">+</span> <span class="token string">"步"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 
     <span class="token comment" spellcheck="true">// 判断是否完成比赛</span>
-    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">gameOver</span><span class="token punctuation">(</span><span class="token keyword">int</span> steps<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">gameOver</span><span class="token punctuation">(</span><span class="token keyword">int</span> steps<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// 判断是否有胜利者</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>winner <span class="token operator">!=</span> null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>winner <span class="token operator">!=</span> null<span class="token punctuation">)</span><span class="token punctuation">{</span>
             <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 已经存在胜利者</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>steps <span class="token operator">&gt;=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>steps <span class="token operator">>=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 winner <span class="token operator">=</span> Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"winner is "</span> <span class="token operator">+</span> winner<span class="token punctuation">)</span><span class="token punctuation">;</span>
                 <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
         <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         Race r1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Race</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>r1<span class="token punctuation">,</span> <span class="token string">"兔子"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>r1<span class="token punctuation">,</span> <span class="token string">"乌龟"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h1 id="7、实现Callable接口-（了解即可）"><a href="#7、实现Callable接口-（了解即可）" class="headerlink" title="7、实现Callable接口 （了解即可）"></a>7、实现Callable接口 （了解即可）</h1><ol>
 <li>实现Callable接口，需要返回值类型</li>
@@ -1087,27 +1087,27 @@
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>concurrent<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;练习Callable，实现多线程同步下载图片&lt;/p&gt;
+ * &lt;p>练习Callable，实现多线程同步下载图片&lt;/p>
  *
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestCallable</span> <span class="token keyword">implements</span> <span class="token class-name">Callable</span><span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestCallable</span> <span class="token keyword">implements</span> <span class="token class-name">Callable</span><span class="token operator">&lt;</span>Boolean<span class="token operator">></span> <span class="token punctuation">{</span>
     <span class="token keyword">private</span> String url<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// 网络图片地址</span>
     <span class="token keyword">private</span> String name<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 保存的文件名</span>
 
-    <span class="token keyword">public</span> <span class="token function">TestCallable</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span> String name<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">TestCallable</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span> String name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>url <span class="token operator">=</span> url<span class="token punctuation">;</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> Boolean <span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> Boolean <span class="token function">call</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         WebDownloader webDownloader<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">WebDownloader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         webDownloader<span class="token punctuation">.</span><span class="token function">downloader</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"下载了文件名为："</span><span class="token operator">+</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> ExecutionException<span class="token punctuation">,</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> ExecutionException<span class="token punctuation">,</span> InterruptedException <span class="token punctuation">{</span>
         TestCallable t1<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestCallable</span><span class="token punctuation">(</span><span class="token string">"http://img.netbian.com/file/2021/0502/17d449ebe5f05a7d0e026773b1601ef7.jpg"</span><span class="token punctuation">,</span><span class="token string">"1.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         TestCallable t2<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestCallable</span><span class="token punctuation">(</span><span class="token string">"https://www.4kbizhi.com/d/file/2021/04/28/small123244uA7An1619584364.jpg"</span><span class="token punctuation">,</span><span class="token string">"2.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         TestCallable t3<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestCallable</span><span class="token punctuation">(</span><span class="token string">"https://www.4kbizhi.com/d/file/2020/09/21/small174423ZTNBA1600681463.jpg"</span><span class="token punctuation">,</span><span class="token string">"3.jpg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1115,30 +1115,30 @@
         <span class="token comment" spellcheck="true">// 1. 创建执行服务</span>
         ExecutorService ser <span class="token operator">=</span> Executors<span class="token punctuation">.</span><span class="token function">newFixedThreadPool</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 2. 提交执行</span>
-        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> r1 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> r2 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> r3 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">></span> r1 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">></span> r2 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Future<span class="token operator">&lt;</span>Boolean<span class="token operator">></span> r3 <span class="token operator">=</span> ser<span class="token punctuation">.</span><span class="token function">submit</span><span class="token punctuation">(</span>t3<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 3. 获取结果</span>
         <span class="token keyword">boolean</span> rs1 <span class="token operator">=</span> r1<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">boolean</span> rs2 <span class="token operator">=</span> r2<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">boolean</span> rs3 <span class="token operator">=</span> r3<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 4. 关闭服务</span>
         ser<span class="token punctuation">.</span><span class="token function">shutdownNow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 下载器</span>
-<span class="token keyword">class</span> <span class="token class-name">WebDownloader</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">WebDownloader</span><span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 下载方法</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">downloader</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span>String name<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">try</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">downloader</span><span class="token punctuation">(</span>String url<span class="token punctuation">,</span>String name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
             FileUtils<span class="token punctuation">.</span><span class="token function">copyURLToFile</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span><span class="token punctuation">(</span>IOException e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>IOException e<span class="token punctuation">)</span><span class="token punctuation">{</span>
             e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"IO异常，downloader方法出现问题"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><code>Callable</code> 的好处</p>
@@ -1148,7 +1148,7 @@
 </ol>
 </blockquote>
 <h1 id="8、静态代理"><a href="#8、静态代理" class="headerlink" title="8、静态代理"></a>8、静态代理</h1><h2 id="8-1-个人结婚与婚庆公司的例子"><a href="#8-1-个人结婚与婚庆公司的例子" class="headerlink" title="8.1 个人结婚与婚庆公司的例子"></a>8.1 个人结婚与婚庆公司的例子</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
- * &lt;p&gt;静态代理&lt;/p&gt;
+ * &lt;p>静态代理&lt;/p>
  * 总结：
  *       真实对象和代理对象都要实现同一个接口
  *       代理对象要代理真实角色
@@ -1156,50 +1156,50 @@
  *      代理对象可以做很多真实对象做不了的事情
  *      真实对象专注做自己的事情
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StaticProxy</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StaticProxy</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span> System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我爱你"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// lambda表达式</span>
+        <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span> System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"我爱你"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// lambda表达式</span>
         <span class="token keyword">new</span> <span class="token class-name">WeddingCompany</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">You</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token keyword">interface</span> <span class="token class-name">Marry</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">interface</span> <span class="token class-name">Marry</span><span class="token punctuation">{</span>
     <span class="token keyword">void</span> <span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">// 真实角色，你去结婚</span>
-<span class="token keyword">class</span> <span class="token class-name">You</span> <span class="token keyword">implements</span> <span class="token class-name">Marry</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">You</span> <span class="token keyword">implements</span> <span class="token class-name">Marry</span><span class="token punctuation">{</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"要结婚了，超开心啊"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true">// 代理角色，帮助你结婚</span>
-<span class="token keyword">class</span> <span class="token class-name">WeddingCompany</span> <span class="token keyword">implements</span> <span class="token class-name">Marry</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">WeddingCompany</span> <span class="token keyword">implements</span> <span class="token class-name">Marry</span><span class="token punctuation">{</span>
 
     <span class="token comment" spellcheck="true">// 代理谁--》真实目标角色</span>
     <span class="token keyword">private</span> Marry target<span class="token punctuation">;</span>
 
-    <span class="token keyword">public</span> <span class="token function">WeddingCompany</span><span class="token punctuation">(</span>Marry target<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token function">WeddingCompany</span><span class="token punctuation">(</span>Marry target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>target <span class="token operator">=</span> target<span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">happyMarry</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 这就是真实对象</span>
         <span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">after</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"结婚之后，收尾款"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">before</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"结婚之前，布置现场"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="8-2-总结"><a href="#8-2-总结" class="headerlink" title="8.2 总结"></a>8.2 总结</h2><p>以上可得出：线程的<strong>底层</strong>实现原理之一：<strong>静态代理模式</strong></p>
 <h1 id="9、Lambda-表达式"><a href="#9、Lambda-表达式" class="headerlink" title="9、Lambda 表达式"></a>9、Lambda 表达式</h1><ul>
@@ -1215,36 +1215,36 @@
 </li>
 <li><p>函数式接口的定义：</p>
 <p>任何接口，如果只包含唯一一个抽象方法，那么它就是一个函数式接口。例子如下：</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">interface</span> <span class="token class-name">ILike</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">interface</span> <span class="token class-name">ILike</span><span class="token punctuation">{</span>
     <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>对于函数式接口，我们可以通过lambda表达式来创建该接口的对象。</p>
-<pre class="line-numbers language-java"><code class="language-java"><span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> expression<span class="token punctuation">[</span>表达式<span class="token punctuation">]</span>
-<span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> statement<span class="token punctuation">[</span>语句<span class="token punctuation">]</span>
-<span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>statements<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> expression<span class="token punctuation">[</span>表达式<span class="token punctuation">]</span>
+<span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> statement<span class="token punctuation">[</span>语句<span class="token punctuation">]</span>
+<span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">{</span>statements<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 </li>
 </ul>
 <h2 id="9-1-无参lambda实现"><a href="#9-1-无参lambda实现" class="headerlink" title="9.1 无参lambda实现"></a>9.1 无参lambda实现</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>jiangqi<span class="token punctuation">.</span>lambda<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;推导lambda表达式&lt;/p&gt;
+ * &lt;p>推导lambda表达式&lt;/p>
  *
  * @author 江七
  * @date 2021/5/23 16:13.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestLambda1</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestLambda1</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 3.静态内部类</span>
-    <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Like2</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Like2</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token punctuation">{</span>
 
         <span class="token annotation punctuation">@Override</span>
-        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I like lambda2"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         ILike like <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Like</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         like<span class="token punctuation">.</span><span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -1252,87 +1252,87 @@
         like<span class="token punctuation">.</span><span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// 4.局部内部类</span>
-        <span class="token keyword">class</span> <span class="token class-name">Like3</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">class</span> <span class="token class-name">Like3</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token punctuation">{</span>
             <span class="token annotation punctuation">@Override</span>
-            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I like lambda3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
         like <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Like3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         like<span class="token punctuation">.</span><span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// 5.匿名内部类</span>
-        like <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ILike</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        like <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ILike</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token annotation punctuation">@Override</span>
-            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I like lambda4"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
         like<span class="token punctuation">.</span><span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// 6.用lambda 简化</span>
-        like <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        like <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I like lambda5"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
         like<span class="token punctuation">.</span><span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 1.定义一个函数式接口</span>
-<span class="token keyword">interface</span> <span class="token class-name">ILike</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">interface</span> <span class="token class-name">ILike</span> <span class="token punctuation">{</span>
     <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
 <span class="token comment" spellcheck="true">// 2.实现类</span>
-<span class="token keyword">class</span> <span class="token class-name">Like</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Like</span> <span class="token keyword">implements</span> <span class="token class-name">ILike</span> <span class="token punctuation">{</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">lambda</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I like lambda"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="9-2-有参lambda实现和简化"><a href="#9-2-有参lambda实现和简化" class="headerlink" title="9.2 有参lambda实现和简化"></a>9.2 有参lambda实现和简化</h2><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>jiangqi<span class="token punctuation">.</span>lambda<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;有参实现&lt;/p&gt;
+ * &lt;p>有参实现&lt;/p>
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestLambda2</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestLambda2</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         ILove love<span class="token operator">=</span>null<span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 1.lambda表达式简化</span>
-<span class="token comment" spellcheck="true">//        love=(int a)-&gt;&amp;#123;</span>
-<span class="token comment" spellcheck="true">//            System.out.println("I love you--&gt;"+a);</span>
-<span class="token comment" spellcheck="true">//        &amp;#125;;</span>
-        love<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you--&gt;"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        love=(int a)->{</span>
+<span class="token comment" spellcheck="true">//            System.out.println("I love you-->"+a);</span>
+<span class="token comment" spellcheck="true">//        };</span>
+        love<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you-->"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
         love<span class="token punctuation">.</span><span class="token function">love</span><span class="token punctuation">(</span><span class="token number">520</span><span class="token punctuation">,</span><span class="token number">502</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 简化 1.参数类型</span>
-<span class="token comment" spellcheck="true">//         love=(a)-&gt;&amp;#123;</span>
-<span class="token comment" spellcheck="true">//            System.out.println("I love you--&gt;"+a);</span>
-<span class="token comment" spellcheck="true">//        &amp;#125;;</span>
-        love<span class="token operator">=</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you--&gt;"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//         love=(a)->{</span>
+<span class="token comment" spellcheck="true">//            System.out.println("I love you-->"+a);</span>
+<span class="token comment" spellcheck="true">//        };</span>
+        love<span class="token operator">=</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">{</span>
+            System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you-->"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
         love<span class="token punctuation">.</span><span class="token function">love</span><span class="token punctuation">(</span><span class="token number">521</span><span class="token punctuation">,</span><span class="token number">502</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 简化 2.简化括号</span>
-<span class="token comment" spellcheck="true">//        love=a-&gt; &amp;#123;</span>
-<span class="token comment" spellcheck="true">//            System.out.println("I love you--&gt;"+a);</span>
-<span class="token comment" spellcheck="true">//        &amp;#125;;</span>
+<span class="token comment" spellcheck="true">//        love=a-> {</span>
+<span class="token comment" spellcheck="true">//            System.out.println("I love you-->"+a);</span>
+<span class="token comment" spellcheck="true">//        };</span>
 <span class="token comment" spellcheck="true">//        love.love(5201314);</span>
         <span class="token comment" spellcheck="true">// 简化 3.去掉花括号</span>
-<span class="token comment" spellcheck="true">//        love=a-&gt; System.out.println("I love you--&gt;"+a);</span>
-        love<span class="token operator">=</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span> System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you--&gt;"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        love=a-> System.out.println("I love you-->"+a);</span>
+        love<span class="token operator">=</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span> System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"I love you-->"</span><span class="token operator">+</span>a<span class="token operator">+</span><span class="token string">","</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
         love<span class="token punctuation">.</span><span class="token function">love</span><span class="token punctuation">(</span><span class="token number">5211314</span><span class="token punctuation">,</span><span class="token number">502</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="token keyword">interface</span> <span class="token class-name">ILove</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">interface</span> <span class="token class-name">ILove</span><span class="token punctuation">{</span>
    <span class="token comment" spellcheck="true">// void love(int a);</span>
     <span class="token keyword">void</span> <span class="token function">love</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>小贴士：</p>
@@ -1390,46 +1390,46 @@
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> state<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;测试stop&lt;/p&gt;
- *  1. 建议线程正常停止--&gt;利用次数，不建议死循环
- *  2. 建议使用标志位--&gt;设置一个标志位
+ * &lt;p>测试stop&lt;/p>
+ *  1. 建议线程正常停止-->利用次数，不建议死循环
+ *  2. 建议使用标志位-->设置一个标志位
  *  3. 不要使用stop或者destroy等过时或者JDK不建议使用的方法
  * @author 江七
  * @date 2021/5/23 21:57.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestStop</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestStop</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
 
     <span class="token comment" spellcheck="true">// 1.设置一个标志位</span>
     <span class="token keyword">private</span> <span class="token keyword">boolean</span> flag<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span><span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"run......Thread"</span><span class="token operator">+</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 
     <span class="token comment" spellcheck="true">// 2.设置一个公开的方法停止线程，转换标志位</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         <span class="token keyword">this</span><span class="token punctuation">.</span>flag<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         TestStop testStop<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestStop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
       
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>testStop<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
          <span class="token comment" spellcheck="true">// main 先执行</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">1000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">1000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"main"</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">900</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">900</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
                 <span class="token comment" spellcheck="true">// 调用stop方法切换标志位，让线程停止</span>
                 testStop<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"线程该停止了"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="10-2-线程休眠-sleep"><a href="#10-2-线程休眠-sleep" class="headerlink" title="10.2 线程休眠(sleep)"></a>10.2 线程休眠(sleep)</h2><ul>
 <li><code>sleep</code>（时间）指定当前线程阻塞的毫秒数</li>
@@ -1444,40 +1444,40 @@
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Date<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;模拟倒计时&lt;/p&gt;
+ * &lt;p>模拟倒计时&lt;/p>
  *
  * @author 江七
  * @date 2021/5/23 22:15.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestSleep2</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestSleep2</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
        <span class="token comment" spellcheck="true">// 打印当前系统时间</span>
         Date startTime <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//获取系统当前时间</span>
 
-        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">try</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">try</span><span class="token punctuation">{</span>
                 Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">SimpleDateFormat</span><span class="token punctuation">(</span><span class="token string">"HH:mm:ss"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span>startTime<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 startTime<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//更新系统当前时间</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
                 e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
     <span class="token comment" spellcheck="true">// 模拟倒计时</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">tenDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">tenDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
         <span class="token keyword">int</span> num<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">;</span>
 
-        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
             Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>num<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>num<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>num<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
                 <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="10-3-线程礼让-yield"><a href="#10-3-线程礼让-yield" class="headerlink" title="10.3 线程礼让(yield)"></a>10.3 线程礼让(yield)</h2><ul>
 <li>礼让线程，让当前正在执行的线程暂停，但不阻塞</li>
@@ -1487,28 +1487,28 @@
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> state<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;测试礼让线程&lt;/p&gt;
+ * &lt;p>测试礼让线程&lt;/p>
  *      礼让不一定成功，看CPU 心情
  * @author 江七
  * @date 2021/5/23 22:25.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestYield</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestYield</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         MyYield myYield<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">MyYield</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>myYield<span class="token punctuation">,</span><span class="token string">"a"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span>myYield<span class="token punctuation">,</span><span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 
-<span class="token keyword">class</span> <span class="token class-name">MyYield</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">MyYield</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"线程开始执行"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Thread<span class="token punctuation">.</span><span class="token function">yield</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 礼让</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Thread<span class="token punctuation">.</span><span class="token function">currentThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"线程停止执行"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="10-4-线程强制执行（join）"><a href="#10-4-线程强制执行（join）" class="headerlink" title="10.4 线程强制执行（join）"></a>10.4 线程强制执行（join）</h2><ul>
 <li>join合并线程，待此线程执行完成后再执行其他线程，其他线程阻塞</li>
@@ -1517,24 +1517,24 @@
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> state<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;
+ * &lt;p>
  *     测试Join方法
  *     想象为插队
- * &lt;/p&gt;
+ * &lt;/p>
  *
  * @author 江七
  * @date 2021/5/23 22:32.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestJoin</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestJoin</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
 
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">1000</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">1000</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"线程vip来了"</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// 启动我们的线程</span>
         TestJoin testJoin<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">TestJoin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Runnable target<span class="token punctuation">;</span>
@@ -1542,14 +1542,14 @@
         thread<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// 主线程</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">500</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">500</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token operator">==</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
                 thread<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//插队</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"main"</span><span class="token operator">+</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>小贴士：</p>
@@ -1572,24 +1572,24 @@
 <pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> state<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">/**
- * &lt;p&gt;观察测试线程状态&lt;/p&gt;
+ * &lt;p>观察测试线程状态&lt;/p>
  *
  * @author 江七
  * @date 2021/5/23 22:46.
  */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestState</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestState</span> <span class="token punctuation">{</span>
 
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        Thread thread<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">5</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-                <span class="token keyword">try</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
+        Thread thread<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">{</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span><span class="token number">5</span> <span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">try</span><span class="token punctuation">{</span>
                     Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">InterruptedException</span> e<span class="token punctuation">)</span><span class="token punctuation">{</span>
                     e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-                <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"////////////////"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
         <span class="token comment" spellcheck="true">// 观察状态</span>
         Thread<span class="token punctuation">.</span>State state<span class="token operator">=</span>thread<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1600,13 +1600,13 @@
         state<span class="token operator">=</span>thread<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Run</span>
 
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>state<span class="token operator">!=</span>Thread<span class="token punctuation">.</span>State<span class="token punctuation">.</span>TERMINATED<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 只要线程不终止，就一直输出状态</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>state<span class="token operator">!=</span>Thread<span class="token punctuation">.</span>State<span class="token punctuation">.</span>TERMINATED<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 只要线程不终止，就一直输出状态</span>
             Thread<span class="token punctuation">.</span><span class="token function">sleep</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             state<span class="token operator">=</span>thread<span class="token punctuation">.</span><span class="token function">getState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//更新线程状态</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>state<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//输出状态</span>
-        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
-<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="10-6-线程优先级"><a href="#10-6-线程优先级" class="headerlink" title="10.6 线程优先级"></a>10.6 线程优先级</h2><ul>
 <li><code>java</code>提供一个线程调度器来监控程序中启动后进入就绪状态的所有线程，线程调度器按照优先级决定应该调度哪个线程来执行</li>
@@ -2110,9 +2110,9 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. 编译和运行以下代码的结果是什么（本题3分）public class StreamTest &amp;#123;
-    public static void main(String[] args) &amp;#123;
-       
+                            1. 编译和运行以下代码的结果是什么（本题3分）public class StreamTest {
+    public static void main(String[] args) {
+        String a="apple";
                         
                     </div>
                     <div class="publish-info">
@@ -2382,7 +2382,7 @@
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">27.3k</span> 字
+                <span class="white-color">26.1k</span> 字
             
 
             
